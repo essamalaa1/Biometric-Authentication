@@ -1,4 +1,4 @@
-### Siamese Network for Biometric Authentication
+# Siamese Network for Biometric Authentication
 This project implements a Siamese neural network for biometric authentication using facial images. The system is designed to verify a user's identity by comparing image pairs and determining whether they belong to the same individual.
 
 ## Overview
@@ -19,7 +19,7 @@ Model Training & Evaluation: Includes training routines, validation metrics, and
 
 User Authentication: Provides a function to authenticate users based on a similarity threshold.
 
-Technologies and Frameworks
+## Technologies and Frameworks
 Python: The primary programming language used.
 
 TensorFlow & Keras: Used for building and training the deep learning model, including custom layers and callbacks.
@@ -32,20 +32,20 @@ Matplotlib & Seaborn: For visualizing training metrics, confusion matrices, and 
 
 scikit-learn: Provides utilities for generating classification reports and computing the confusion matrix.
 
-Project Structure
-Data Preparation:
+## Project Structure
+### Data Preparation:
 
 Generates image paths and creates pairs (both positive and negative) for training and testing.
 
 Balances the dataset with negative sampling to ensure robust training.
 
-Model Architecture:
+### Model Architecture:
 
 Defines a base CNN network for feature extraction.
 
 Constructs the Siamese network that combines twin networks using a Lambda layer for Euclidean distance computation.
 
-Training & Evaluation:
+### Training & Evaluation:
 
 Compiles the model with a binary cross-entropy loss function and an Adam optimizer.
 
@@ -53,7 +53,7 @@ Trains the model while monitoring performance with a checkpoint callback.
 
 Evaluates the model using accuracy, confusion matrix, and classification reports.
 
-User Authentication:
+### User Authentication:
 
 Implements a function to authenticate users by comparing a reference image with an input image.
 

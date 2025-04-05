@@ -1,5 +1,5 @@
 # Siamese Network for Biometric Authentication
-This project implements a Siamese neural network for biometric authentication using facial images. The system is designed to verify a user's identity by comparing image pairs and determining whether they belong to the same individual.
+This project implements a Siamese neural network for biometric authentication using Retina images. The system is designed to verify a user's identity by comparing image pairs and determining whether they belong to the same individual.
 
 ## Overview
 The core idea behind this project is to leverage a Siamese network architecture that learns an embedding space where similar images (i.e., images of the same person) are close together and dissimilar images are far apart. This allows the system to perform authentication by comparing the similarity score between a reference image and a user-provided input image.
